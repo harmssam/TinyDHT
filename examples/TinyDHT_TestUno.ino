@@ -40,7 +40,7 @@ void loop() {
     Serial.print(h);
     Serial.print(" %\t");
     Serial.print("Temperature: "); 
-    Serial.print(t);
+    Serial.print((t-32)*5/9); //conversion from F to C
     Serial.println(" *C");
   }
   delay(2000);
